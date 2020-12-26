@@ -3,10 +3,11 @@ function aniro (userConfig) {
     line: Math.round(document.documentElement.clientHeight / 2),
     gap: 30,
     disableWhenBottomReached: true,
+    selector: '[data-aniro_root] [data-aniro]',
     ...userConfig
   }
 
-  const getChildren = () => Array.prototype.slice.call(document.querySelectorAll('[data-aniro]'))
+  const getChildren = () => Array.prototype.slice.call(document.querySelectorAll(config.selector))
 
   const isBottomReached = () => {
     const scrollHeight = document.documentElement.scrollHeight
@@ -37,7 +38,6 @@ function aniro (userConfig) {
   }
   const hide = node => node.classList.add('aniro_hidden')
 
-  const root = document.querySelector('[data-aniro_root]')
   const oldOnScroll = window.onscroll || function () {}
 
   getChildren().forEach(child => {

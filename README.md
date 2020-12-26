@@ -12,11 +12,11 @@ animated right away.
 
 Insert this into your `head`:
 ```HTML
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/uyouthe/aniro/aniro.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mvoloskov/aniro/aniro.min.css">
 ```
 ...and this at the end of your `<body>`:
 ```HTML
-<script src="https://cdn.jsdelivr.net/gh/uyouthe/aniro/aniro.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mvoloskov/aniro/aniro.min.js"></script>
 <script>aniro()</script>
 ```
 
@@ -62,5 +62,5 @@ It's "animation" plus "yamero" – "stop it" in Japanese. The word is heavily as
 
 ## Author
 [Miloslav Voloskov](https://miloslav.website)  
-The idea by [nice-naming team](https://github.com/nice-naming)
+The idea by [nice-naming team](https://github.com/nice-naming)  
 Gifs are from [30000fps](https://30000fps.com)
